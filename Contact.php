@@ -1,17 +1,47 @@
 <?php
-class Contact
-{
-    private string $C_name;
-    private string $C_number;
-    private boolean $isfavourite;//we can remove boolean ->dynamic language
-    private boolean $isBlocked;
-    private boolean $isEmergency;
-    public function Editname(){
-        
+class Contact extends Person {
+    private $contactname;
+    private $isfavourite;
+    private $isBlocked;
+    private $isEmergency;
+    public function setContactName($contactName)
+    {
+        $this->contactName = $contactName;
     }
-    public function Editnumber(){
 
+    public function getContactName()
+    {
+        return $this->contactname;
     }
+    public function setisFavorite($isfavourite)
+    {
+        $this->isfavourite = $isfavourite;
+    }
+
+
+    public function getIsFavorite()
+    {
+        return $this->isfavourite;
+    }
+
+    public function setisBlocked($isBlocked)
+    {
+        $this->isBlocked = $isBlocked;
+    }
+    public function getisBlocked($isBlocked)
+    {
+        return $this->isBlocked;
+    }
+
+    public function setisEmergency($isEmergency)
+    {
+        $this->isEmergency=$isEmergency;
+    }
+    public function getisEmergency()
+    {
+        return $this->isEmergency;
+    }
+    
     public function Favourite(){
 
     }
@@ -31,6 +61,12 @@ class Contact
 
     }
     public function Report(){
+
+    }
+    public function Edit_name(){//abstract
+
+    }
+    public function Edit_number(){//abstract
 
     }
 }

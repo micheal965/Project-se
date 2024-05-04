@@ -1,13 +1,34 @@
 <?php
-class User
-{
-    private string $f_name;
-    private string $l_name;
-    private string $phone_number;
-    private string $l_email;
+class User extends Person {
+    private string $email;
     private string $password;
     private string $country;
-
+    public function setemail($email)
+    {
+        $this->email = $email;
+    }
+    public function getemail()
+    {
+        return $this->email;
+    }
+    public function setpassword($password)
+    {
+        $this->password = $password;
+    }
+    public function getpassword()
+    {
+        return $this->password;
+    }
+    public function setcountry($country)
+    {
+        $this->country = $country;
+    }
+    public function getcountry()
+    {
+        return $this->country;
+    }
+    
+    
     public function Register()
     {
 
@@ -28,5 +49,21 @@ class User
     {
 
     }
+    
+    public function Viewblockedcontact(){
+    }
+    public function Viewfavouritecontact(){
+    }
+    public function Viewemergencycontact(){
+    }
+    public function Edit_name()
+    {
+
+    }
+    public function Edit_number()
+    {
+
+    }
+    
 }
 ?>

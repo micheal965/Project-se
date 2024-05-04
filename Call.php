@@ -1,10 +1,45 @@
 <?php
 class Call
 {
-    private string $Callername;
-    private string $Callernumber;
-    private $startcall = date("Y-m-d", $startcall);
-    private $Endcall = date("Y-m-d", $Endcall);
+
+    private $id;
+    private $startTime;
+    private $endTime;
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setStartTime($startTime)
+    {
+        $this->startTime = $startTime;
+    }
+
+    public function getStartTime()
+    {
+        return $this->startTime;
+    }
+
+    public function setEndTime($endTime)
+    {
+        $this->endTime = $endTime;
+    }
+
+    public function getEndTime()
+    {
+        return $this->endTime;
+    }
+
+
+
+    
     public function Makecall()
     {
 
@@ -21,7 +56,7 @@ class Call
     {
 
     }
-    public function Closecall()
+    public function Endcall()
     {
 
     }

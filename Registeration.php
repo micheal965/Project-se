@@ -1,16 +1,31 @@
 <?php
-class Registeration{
-private int $Verification_code; 
+class Registeration
+{
+    private $id;
+    private $verificationCode;
+    public function setVerificationCode($verificationCode)
+    {
+        $this->verificationCode = $verificationCode;
+    }
 
-public function Send_code(){
+    public function getVerificationCode()
+    {
+        return $this->verificationCode;
+    }
 
-}
-public function Get_code(){
-}
-public function Verify_code(){
-}
-public function Resend_code(){
+    public function Send_code()
+    {
 
-}
+    }
+    public function Get_code()
+    {
+    }
+    public function Verify_code()
+    {
+    }
+    public function Resend_code()
+    {
+
+    }
 }
 ?>

@@ -1,8 +1,30 @@
 <?php
 class Message
 {
+    private $id;
     private string $Textmessage;
-    private Date $Time;//can remove date
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setText($Textmessage)
+    {
+        $this->Textmessage = $Textmessage;
+    }
+    
+
+    public function getText()
+    {
+        return $this->Textmessage;
+    }
+
     public function Sendmessage()
     {
 
