@@ -47,7 +47,7 @@ $id = $_SESSION['user_id'];
             <div class="menu">
                 <ul class="mm">
                     <li><a href="home.php">HOME</a></li>
-                    <li><a href="my profile.php">PROFILE</a></li>
+                    <li><a href="myprofile.php">PROFILE</a></li>
                     <li><a href="ero.html">HELP</a></li>
                     <li><a href="index.login.php">LOGOUT </a></li>
 

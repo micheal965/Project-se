@@ -24,8 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gender = $_SESSION['gender'];
 
     $us = new register;
+    $user = new User;
+    $user->
     $us->makeProfile($phone, $firstName, $lastName, $email, $country, $gender);
-   // $us = new register;
+    $us = new register;
     $id = $us->getUser_id($firstName, $lastName, $phone);
 
     $_SESSION['user_id'] = $id;
